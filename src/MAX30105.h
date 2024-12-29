@@ -8,16 +8,11 @@
  Written by Peter Jansen and Nathan Seidle (SparkFun)
  BSD license, all text above must be included in any redistribution.
  *****************************************************/
+#ifndef MAX30105_H
+#define MAX30105_H
 
-#pragma once
-
-#if (ARDUINO >= 100)
- #include "Arduino.h"
-#else
- #include "WProgram.h"
-#endif
-
-#include <Wire.h>
+#include <MAX30105_port.h>
+#include <spo2_algorithm.h>
 
 #define MAX30105_ADDRESS          0x57 //7-bit I2C Address
 //Note that MAX30102 has the same I2C address and Part ID
@@ -154,3 +149,6 @@ class MAX30105 {
   sense_struct sense;
 
 };
+
+
+#endif //MAX30105_H

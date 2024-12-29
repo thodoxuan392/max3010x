@@ -62,7 +62,8 @@
 #ifndef SPO2_ALGORITHM_H_
 #define SPO2_ALGORITHM_H_
 
-#include <Arduino.h>
+#include "MAX30105_port.h"
+
 
 #define FreqS 25    //sampling frequency
 #define BUFFER_SIZE (FreqS * 4) 
